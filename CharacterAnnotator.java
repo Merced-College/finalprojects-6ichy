@@ -25,6 +25,7 @@ public class CharacterAnnotator {
         SwingUtilities.invokeLater(() -> new CharacterAnnotator().createAndShowGui());
     }
 
+    // ChatGPT: This method sets up the GUI and initializes the drawing panel
     private void createAndShowGui() {
         loadEntries(); // load existing data if available
         ensureImageDir(); // create images folder if needed
@@ -82,6 +83,7 @@ public class CharacterAnnotator {
         if (!dir.exists()) dir.mkdirs();
     }
 
+    // ChatGPT: This method handles the save button action
     private void onSave() {
         String label = labelField.getText().trim();
         if (label.isEmpty()) label = "?"; // fallback if no label entered
@@ -138,7 +140,7 @@ public class CharacterAnnotator {
         DataEntry(String p, String l) { path = p; label = l; }
     }
 
-    // panel where user draws with mouse
+    // ChatGPT: This class handles the drawing panel where the user can draw characters
     private static class DrawingPanel extends JPanel {
         private BufferedImage img;
         private Graphics2D g2;

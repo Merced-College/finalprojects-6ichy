@@ -1,0 +1,9 @@
+For my final project, I'm building a character recognition app 
+that lets users draw letters or digits on a canvas, saves the drawing with a label, 
+and then uses a machine learning model to predict what character was written.
+
+So far, I’ve written several parts of the program: a "clear" class that resets the drawing area,
+a DataEntry class that stores image paths and their labels, 
+and a feature to show label counts using a hash table. 
+Next, I plan to focus on improving the accuracy of the machine learning model 
+by expanding the volume of training data

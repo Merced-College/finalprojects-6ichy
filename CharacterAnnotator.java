@@ -72,6 +72,7 @@ public class CharacterAnnotator {
         frame.setVisible(true);
     }
 
+    // assisted by ChatGPT
     // load existing entries from data.json
     private void loadEntries() {
         File f = new File(DATA_FILE);
@@ -95,12 +96,14 @@ public class CharacterAnnotator {
         }
     }
 
+    // assisted by ChatGPT
     // Make sure the images folder exists, create if it doesn't
     private void ensureImageDir() {
         File dir = new File(IMG_DIR);
         if (!dir.exists()) dir.mkdirs();
     }
 
+    // assisted by ChatGPT
     private void onSave() {
         String rawLabel = labelField.getText().trim().toLowerCase();    // get label from text field
         String label = rawLabel.isEmpty() ? "?" : rawLabel; // if empty, set to "?", otherwise use the rawLabel
@@ -160,6 +163,7 @@ public class CharacterAnnotator {
         }
     }
 
+    // assisted by ChatGPT
     // panel where user draws with mouse
     private static class DrawingPanel extends JPanel {
         private BufferedImage img;
